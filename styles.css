@@ -9,24 +9,60 @@ h2{
 	padding: 9rem 1rem 1rem 1rem;
 }
 .header{
-	background: white;
+	align-items: baseline;
 	display: flex;
+	background: white;
 	height: 32rem;
+	justify-content: space-between;
 	width: 100%;	
+}
+.header_left{
+	align-items: baseline;
+	display: flex;
+	justify-content: flex-start;
+}
+.header_right{
+	align-items: baseline;
+	display: flex;
+	justify-content: flex-end;
 }
 .header h1{
 	color: #309d97;
 	font-size: 9rem;
 	padding: 2rem 8rem 2rem 8rem;	 
 }
+.header h2{
+	padding: 2rem 48rem 2rem 6rem;
+}
 .passwords{
-	flex-flow: row wrap;
-	height: 10rem;
-	padding: 2rem 8rem 2rem 40rem;
-	position: absolute;
-	right: 0;
+	align-items: baseline;
+	display: inline-flex;
+	padding: 2rem 11rem 2rem 6rem;
+	size: 40rem;
 }
 .passwords_img{
 	background: url('img/locker.jpg') no-repeat;
-	height: 10rem;
+	padding: 2rem 1rem 4rem 1rem;
+	width: 10rem;
+}
+.passwords_tittle{
+	color: #00C4C0;
+	font-size: 6rem;
+}
+.user{
+	align-items: baseline;
+	display: inline-flex;
+	padding: 2rem 10rem 2rem 8rem;
+	size: 40rem;
+}
+.user_name{
+	color: #00A09B;
+	font-size: 6rem;
+	font-weight: bold;
+	padding: 2rem 8rem 4rem 4rem;
+}
+.user_actions{
+	background: url('img/arrow.jpg') no-repeat;
+	padding: 2rem 2rem 4rem 1rem;
+	width: 10rem;
 }
