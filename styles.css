@@ -10,8 +10,8 @@ h2{
 }
 .header{
 	align-items: baseline;
-	display: flex;
 	background: white;
+	display: flex;
 	height: 32rem;
 	justify-content: space-between;
 	width: 100%;	
@@ -65,4 +65,12 @@ h2{
 	background: url('img/arrow.jpg') no-repeat;
 	padding: 2rem 2rem 4rem 1rem;
 	width: 10rem;
+}
+.content{
+	background: #00A09B;
+	display: flex
+}
+.packages{
+	background: white;
+	
 }
