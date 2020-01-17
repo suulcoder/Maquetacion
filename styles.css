@@ -1,0 +1,32 @@
+html, body {
+    font-size: 4px;
+    font-family: sans-serif;
+    height: 100%;
+}
+h2{
+	color: #C1C1C1;
+	font-size: 4rem;
+	padding: 9rem 1rem 1rem 1rem;
+}
+.header{
+	background: white;
+	display: flex;
+	height: 32rem;
+	width: 100%;	
+}
+.header h1{
+	color: #309d97;
+	font-size: 9rem;
+	padding: 2rem 8rem 2rem 8rem;	 
+}
+.passwords{
+	flex-flow: row wrap;
+	height: 10rem;
+	padding: 2rem 8rem 2rem 40rem;
+	position: absolute;
+	right: 0;
+}
+.passwords_img{
+	background: url('img/locker.jpg') no-repeat;
+	height: 10rem;
+}
