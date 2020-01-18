@@ -3,157 +3,293 @@ html, body {
     font-family: sans-serif;
     height: 100%;
 }
+
 h1{
-	color: #C1C1C1;
+	color: #B6B6B6;
 	font-size: 8rem;
-	padding: 5rem 8rem 2rem 8rem;	
+	padding: 5rem 3rem 2rem 2rem;	
 }
+
 h2{
 	color: #C1C1C1;
 	font-size: 4rem;
 	padding: 9rem 1rem 1rem 1rem;
 }
+
 h3{
 	color: #00A09B;
 	font-size: 5rem;
 	padding: 3rem 4rem 3rem 8rem;	
 }
+
 .header{
 	align-items: baseline;
 	background: white;
 	display: flex;
-	height: 32rem;
 	justify-content: space-between;
 	width: 100%;	
+	overflow: auto;
 }
+
 .header_left{
 	align-items: center;
 	display: flex;
 	justify-content: flex-start;
 }
+
 .header_right{
 	align-items: center;
 	display: flex;
 	justify-content: flex-end;
 }
-.header .header_left{     /*help us to write less code*/
+
+.header .header_left{    				 /*help us to write less code*/
 	align-items: baseline;
 }
+
+.header .header_right{
+	align-items: baseline;
+}
+
 .header h1{
 	color: #309d97;
 	font-size: 12rem;
+	padding: 5rem 8rem 2rem 8rem;
 }
+
 .header h2{
 	padding: 2rem 48rem 2rem 6rem;
 }
+
 .passwords{
 	align-items: baseline;
-	display: inline-flex;
+	display: flex;
 	padding: 2rem 11rem 2rem 6rem;
-	size: 40rem;
+	font-size: 40rem;
 }
+
 .passwords_img{
 	background: url('img/locker.jpg') no-repeat;
 	padding: 2rem 1rem 4rem 1rem;
 	width: 10rem;
 }
+
 .passwords_tittle{
 	color: #00C4C0;
-	font-size: 6rem;
+	font-size: 5rem;
 }
+
 .user{
 	align-items: baseline;
 	display: inline-flex;
-	padding: 2rem 10rem 2rem 8rem;
-	size: 40rem;
+	padding: 2rem 1rem 2rem 1rem;
+	font-size: 10rem;
 }
+
 .user_name{
 	color: #00A09B;
-	font-size: 6rem;
+	font-size: 5rem;
 	font-weight: bold;
-	padding: 2rem 8rem 4rem 4rem;
+	padding: 2rem 1rem 4rem 1rem;
 }
+
 .user_actions{
 	background: url('img/arrow.jpg') no-repeat;
 	padding: 2rem 2rem 4rem 1rem;
 	width: 10rem;
 }	
+
 .content{
 	background: #00A09B;
-	display: flex
+	display: flex;
+	justify-content: space-between;
+	overflow:auto;
 }
+
+
 .packages{
 	background: white;
 	border-radius: 2rem;
     box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
 	justify-content: space-between;
-	margin-bottom: 10rem;
-	margin-left: 10rem;
-	margin-top: 15rem;
-	overflow: hidden;
-	width: 120rem;
+	margin-bottom: 5rem;
+	margin-left: 5rem;
+	margin-top: 10rem;
 }
+
 .packages h2{
 	padding: 9rem 7rem 1rem 7rem;
 }
+
 li{
 	color: #C1C1C1;
 	font-size: 4rem;
-	padding: 5rem 6rem 5rem 6rem;
+	padding: 5rem 16rem 5rem 6rem;
 }
+
 li:hover{
 	color: #00A09B;
 	font-size: 5rem;
-	padding: 5rem 4rem 5rem 4rem;	
+	padding: 5rem 16rem 5rem 6rem;	
 }
+
 .add_package{
-	align-items: stretch;
+	align-items: center;
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 7rem;
 }
+
 input[type=text]{
   box-sizing: border-box;
   border-radius: 2rem;
   border: 1px solid #ccc;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
   display: inline-block;margin: 8px 0;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-left: 5rem;
   padding: 12px 20px;
-  width: 70%;
+  width: 60%;
 }
 ::placeholder {								/*Not sure if this is a good practice*/
-  font-size: 4rem;
+  font-size: 3rem;
+  size: 3rem;
 }
+
 .add_package_img{
 	background: url('img/add.jpg') no-repeat;
 	height: 15rem;
-	margin-left: 5rem;
-	margin-right: 5rem;		 
+	margin-left: 2rem;
+	margin-right: 2rem;		 
 	padding: 1rem 0rem 0rem 15rem;
 }
+
 .main_content{
+	align-items: stretch;
+	display: flex;
+	flex-direction: column;
+	margin-left: 5rem;
+	margin-right: 5rem;
 	width: 100%;
 }
+
 .content_header{
 	align-items: baseline;
+	border-bottom: 3px solid gray;
 	display: flex;
-	height: 32rem;
 	justify-content: space-between;
-	margin-top: 20rem;
+	margin-top: 10rem;
 	padding: 15rem 0rem 5rem 1rem
 	width: 100%;
+	overflow: auto;
 }
+
 .edit_img{
 	background: url('img/edit.jpg') no-repeat;	
 	width: 10rem;
 	height: 10rem;
-	padding: 1rem 0rem 0rem 1rem
+	padding: 1rem 2rem 2rem 1rem
 }
+
 .trash_img{
 	background: url('img/trash.jpg') no-repeat;	
 	width: 10rem;
 	height: 10rem;
-	padding: 1rem 0rem 0rem 1rem
+	padding: 1rem 2rem 2rem 1rem
 }
+
+.content_header .header_right div{
+	border-radius: 6rem;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 3rem 6rem 3rem 6rem; 
+}
+
+.add_book{
+	background: #00BC5D;
+}
+
+.add_category{
+	background: #00BCB7;
+}
+
+.language_header{
+	border-bottom: 3px solid gray;
+	display: flex;
+	justify-content: flex-start;
+	padding: 15rem 0rem 5rem 1rem
+	width: 100%;
+	overflow: auto;
+}
+
+.language_header h2{
+	padding: 1rem 8rem 1rem 8rem;
+}
+
+.language_header h2:hover{
+	color: white;
+}
+
+.books{
+	display: flex;
+	margin-top: 5rem;
+
+}
+
+.book { /*REFERENCE coded in class:; https://github.com/samuelchvez/uvg-web-2020/blob/master/ejemplo_maqueta/styles.css*/
+    border-radius: 2rem;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    display: block;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    overflow: hidden;
+    width: 226px;
+}
+
+.book__image {
+    background-position: center;;
+    background-size: cover;
+    height: 70rem
+}
+
+.book__footer {
+    background: white;
+	display: flex;
+	justify-content: space-between;
+    padding: 2rem 3rem 2rem 3rem;
+}
+
+.book__meta{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.book__title {
+    color: #019c97;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.book__size {
+    color: #777777;
+    font-size: 3rem;
+}
+
+.book__actions{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.book__more {
+	background: url("img/options.jpg") no-repeat;
+    bottom: 0;
+    height: 14rem;
+    width: 4rem;
+}/*end of reference*/
