@@ -27,14 +27,17 @@ h3{
 	width: 100%;	
 }
 .header_left{
-	align-items: baseline;
+	align-items: center;
 	display: flex;
 	justify-content: flex-start;
 }
 .header_right{
-	align-items: baseline;
+	align-items: center;
 	display: flex;
 	justify-content: flex-end;
+}
+.header .header_left{     /*help us to write less code*/
+	align-items: baseline;
 }
 .header h1{
 	color: #309d97;
@@ -83,11 +86,12 @@ h3{
 	background: white;
 	border-radius: 2rem;
     box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+	justify-content: space-between;
 	margin-bottom: 10rem;
 	margin-left: 10rem;
 	margin-top: 15rem;
 	overflow: hidden;
-	width: 110rem;
+	width: 120rem;
 }
 .packages h2{
 	padding: 9rem 7rem 1rem 7rem;
@@ -105,6 +109,7 @@ li:hover{
 .add_package{
 	align-items: stretch;
 	display: flex;
+	justify-content: space-between;
 	margin-bottom: 7rem;
 }
 input[type=text]{
@@ -113,38 +118,42 @@ input[type=text]{
   border: 1px solid #ccc;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
   display: inline-block;margin: 8px 0;
-  font-size: 5rem;
+  font-size: 4rem;
   margin-left: 5rem;
   padding: 12px 20px;
-  width: 100%;
+  width: 70%;
 }
 ::placeholder {								/*Not sure if this is a good practice*/
-  font-size: 5rem;
-  size:5rem ;
+  font-size: 4rem;
 }
 .add_package_img{
 	background: url('img/add.jpg') no-repeat;
 	height: 15rem;
-	margin-left: 5rem;	 
+	margin-left: 5rem;
+	margin-right: 5rem;		 
 	padding: 1rem 0rem 0rem 15rem;
-	width: 15rem;
 }
-.main_contain{
+.main_content{
+	width: 100%;
+}
+.content_header{
 	align-items: baseline;
-	background: white;
 	display: flex;
 	height: 32rem;
 	justify-content: space-between;
+	margin-top: 20rem;
+	padding: 15rem 0rem 5rem 1rem
+	width: 100%;
 }
-.content_header{
-	margin-top: 17rem;
-}
-/*.edit_img{
-	background: url('img/trash.jpg') no-repeat;	
-	width: 100rem;
-	height: 100rem;
+.edit_img{
+	background: url('img/edit.jpg') no-repeat;	
+	width: 10rem;
+	height: 10rem;
+	padding: 1rem 0rem 0rem 1rem
 }
 .trash_img{
 	background: url('img/trash.jpg') no-repeat;	
-	width: 100rem;
-}*/
+	width: 10rem;
+	height: 10rem;
+	padding: 1rem 0rem 0rem 1rem
+}
